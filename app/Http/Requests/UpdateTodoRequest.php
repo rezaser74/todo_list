@@ -23,6 +23,7 @@ class UpdateTodoRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'is_completed' => 'required|boolean',
             //
         ];
     }
