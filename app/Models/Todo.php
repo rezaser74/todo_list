@@ -25,12 +25,4 @@ class Todo extends Model
             'is_completed' => 'boolean',
         ];
     }
-
-    /**
-     * Business logic for marking a todo as completed.
-     */
-    public function markAsComplete(): bool
-    {
-        return $this->update(['is_completed' => true]);
-    }
 }
